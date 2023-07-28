@@ -23,6 +23,7 @@ export function header(){
     header.addEventListener('click', (e) =>{
         if (e.target.closest('.burger')){
             burger.classList.toggle('active')
+            body.classList.toggle('lock-02')
             headNav.classList.toggle('show')
             headLink.forEach(link => {
                 link.classList.toggle('show')
